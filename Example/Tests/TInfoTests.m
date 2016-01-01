@@ -29,19 +29,26 @@
 
 - (void)testExample {
     
-    [TInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionBefore usingBlock:^{
+    NSObject<AspectToken>* beforeAspect = [TInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionBefore usingBlock:^{
         
         NSLog(@"before call oc test");
         
     } error:NULL];
     
-    [TInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionAfter usingBlock:^{
+    NSObject<AspectToken>* afterAspect = [TInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionAfter usingBlock:^{
 
         NSLog(@"after call oc test");
         
     } error:NULL];
     
     [[[TInfo alloc] init] test];
+    
+    [beforeAspect remove];
+    [afterAspect remove];
+    
+    [[[TInfo alloc] init] test];
+    
+    
 }
 
 @end

@@ -27,7 +27,7 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testExampleForOC {
     
     NSObject<AspectToken>* beforeAspect = [TInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionBefore usingBlock:^{
         
@@ -36,7 +36,7 @@
     } error:NULL];
     
     NSObject<AspectToken>* afterAspect = [TInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionAfter usingBlock:^{
-
+        
         NSLog(@"after call oc test");
         
     } error:NULL];
@@ -48,6 +48,29 @@
     
     [[[TInfo alloc] init] test];
     
+}
+
+- (void)testExampleForSwift {
+    
+    NSObject<AspectToken>* beforeAspect = [SInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo){
+        
+        NSLog(@"before call swift test");
+        NSLog(@"%@",aspectInfo);
+        
+    } error:NULL];
+    
+    NSObject<AspectToken>* afterAspect = [SInfo aspect_hookSelector:@selector(test) withOptions:AspectPositionAfter usingBlock:^{
+        
+        NSLog(@"after call swift test");
+        
+    } error:NULL];
+    
+    [[[SInfo alloc] init] test];
+    
+    [beforeAspect remove];
+    [afterAspect remove];
+    
+    [[[SInfo alloc] init] test];
     
 }
 

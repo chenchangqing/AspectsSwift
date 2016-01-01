@@ -16,15 +16,31 @@ class Tests: XCTestCase {
     
     func testExample() {
         
-        let wrappedBlock:@convention(block) ()->Void={
+        let wrappedBlock:@convention(block) (info:AspectInfo)->Void={ info in
             
+            print(info)
             print("before call swift test")
         }
         let wrappedObject: AnyObject = unsafeBitCast(wrappedBlock, AnyObject.self)
         
         try!SInfo.aspect_hookSelector(Selector("test"), withOptions: .PositionBefore, usingBlock: wrappedObject)
         
-        SInfo().test()
+        SInfo().performSelector(Selector("test"))
+    }
+    
+    func testExample2() {
+        
+        do {
+            
+            try SInfo.aspect_hookSelectorForSwift(Selector("test"), withOptions: .PositionBefore) { (info:AspectInfo!, any:AnyObject!) -> Void in
+                
+                print(info)
+            }
+        } catch {
+            
+            print(error)
+        }
+        SInfo().performSelector(Selector("test"))
     }
     
 }

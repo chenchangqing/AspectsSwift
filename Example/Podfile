@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'AspectsSwift_Example', :exclusive => true do
+  pod "AspectsSwift", :path => "../"
+end
+
+target 'AspectsSwift_Tests', :exclusive => true do
+  pod "AspectsSwift", :path => "../"
+
+  
+end

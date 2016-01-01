@@ -1,0 +1,14 @@
+PODS:
+  - AspectsSwift (0.1.0)
+
+DEPENDENCIES:
+  - AspectsSwift (from `../`)
+
+EXTERNAL SOURCES:
+  AspectsSwift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AspectsSwift: e50f3ca2b484d9d765b3204bae78a5ada5d3030e
+
+COCOAPODS: 0.39.0

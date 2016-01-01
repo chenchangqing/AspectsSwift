@@ -10,9 +10,9 @@
 
 @implementation TInfo
 
--(void)start {
+-(void)test {
     
-    NSLog(@"%@",@"123456");
+    NSLog(@"%@",@"this is test for oc!!!");
 }
 
 @end

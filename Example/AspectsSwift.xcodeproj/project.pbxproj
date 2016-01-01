@@ -14,9 +14,10 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		E6F1BD051C36819000148D13 /* AspectsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F1BD031C36803E00148D13 /* AspectsHelper.m */; };
+		607FACEC1AFB9204008FA782 /* SInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* SInfoTests.swift */; };
 		E6F1BD091C36B37D00148D13 /* TInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F1BD081C36B37D00148D13 /* TInfo.m */; };
+		E6F1BD151C36CD9500148D13 /* SInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F1BD141C36CD9500148D13 /* SInfo.swift */; };
+		E6F1BD171C36CE2F00148D13 /* TInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F1BD161C36CE2F00148D13 /* TInfoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +43,17 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AspectsSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AspectsSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* SInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SInfoTests.swift; sourceTree = "<group>"; };
 		A8F55F284D6A296F18AFB059 /* Pods-AspectsSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AspectsSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AspectsSwift_Example/Pods-AspectsSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AFED6D9E6B0BB806CB2FEFDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0318D5FA033C87B9FD95A41 /* Pods-AspectsSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AspectsSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AspectsSwift_Tests/Pods-AspectsSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E024F709672F620A62FC79FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E6F1BD011C36803E00148D13 /* AspectsSwift_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AspectsSwift_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
-		E6F1BD021C36803E00148D13 /* AspectsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectsHelper.h; sourceTree = "<group>"; };
-		E6F1BD031C36803E00148D13 /* AspectsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectsHelper.m; sourceTree = "<group>"; };
 		E6F1BD071C36B37D00148D13 /* TInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TInfo.h; sourceTree = "<group>"; };
 		E6F1BD081C36B37D00148D13 /* TInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TInfo.m; sourceTree = "<group>"; };
 		E6F1BD131C36CC6400148D13 /* AspectsSwift_Example-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AspectsSwift_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6F1BD141C36CD9500148D13 /* SInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SInfo.swift; sourceTree = "<group>"; };
+		E6F1BD161C36CE2F00148D13 /* TInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TInfoTests.m; sourceTree = "<group>"; };
 		FD1EA424668FB3052B37BCA0 /* Pods_AspectsSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AspectsSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD87117EE924B5EADF153722 /* AspectsSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AspectsSwift.podspec; path = ../AspectsSwift.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +116,8 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
 				E6F1BD131C36CC6400148D13 /* AspectsSwift_Example-Bridging-Header.h */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for AspectsSwift";
 			path = AspectsSwift;
@@ -133,13 +134,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-				E6F1BD021C36803E00148D13 /* AspectsHelper.h */,
-				E6F1BD031C36803E00148D13 /* AspectsHelper.m */,
-				E6F1BD011C36803E00148D13 /* AspectsSwift_Tests-Bridging-Header.h */,
+				E6F1BD161C36CE2F00148D13 /* TInfoTests.m */,
 				E6F1BD071C36B37D00148D13 /* TInfo.h */,
 				E6F1BD081C36B37D00148D13 /* TInfo.m */,
+				607FACEB1AFB9204008FA782 /* SInfoTests.swift */,
+				E6F1BD141C36CD9500148D13 /* SInfo.swift */,
+				E6F1BD011C36803E00148D13 /* AspectsSwift_Tests-Bridging-Header.h */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -383,8 +384,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6F1BD091C36B37D00148D13 /* TInfo.m in Sources */,
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-				E6F1BD051C36819000148D13 /* AspectsHelper.m in Sources */,
+				E6F1BD151C36CD9500148D13 /* SInfo.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* SInfoTests.swift in Sources */,
+				E6F1BD171C36CE2F00148D13 /* TInfoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

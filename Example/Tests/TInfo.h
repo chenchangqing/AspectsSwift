@@ -10,6 +10,6 @@
 
 @interface TInfo : NSObject
 
--(void)start;
+-(void)test;
 
 @end
